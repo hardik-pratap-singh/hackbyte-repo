@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        body {
+            background-image: url('https://www.iiitdmj.ac.in/img/campus/LHTC.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+        header {
+            margin-top: 5px;
+        }
+
+        .navbar {
+            background-color: rgb(243 223 223);
+            border-radius: 20px;
+            margin-top: 0px;
+            border: 3px solid #2b2626;
+        }
+
+        .navbar ul {
+            overflow: auto;
+
+        }
+
+        .navbar li a {
+            box-sizing: border-box;
+            text-decoration: none;
+            padding: 1px 43px 1px 1px;
+            margin: 1px 1px 1px 1px;
+            font-size: 22px;
+        }
+
+        .navbar ul li {
+            box-sizing: border-box;
+            list-style: none;
+            float: left;
+            padding: 2px;
+            margin: -4px;
+            font-size: 0px;
+        }
+        #head1 {
+            box-sizing: border-box;
+            width: 400px;
+            border: 3px solid green;
+            background-color: #edecf7;
+            border-radius: 18px;
+            display: inline-block;
+            margin: 20px 12px 3px 594px;
+            padding: 0px 1px 1px 2px;
+            font-size: 33px;
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        #blk1 {
+            margin: 8px 552px 1px 112px;
+            padding: 1px 1px 1px 1px;
+            display: inline-block;
+            width: 400px;
+            border: 2px solid red;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ecc9bb;
+        }
+        #blk2 {
+            margin: 1px 1px 1px 1px;
+            padding: 1px 1px 1px 1px;
+            display: inline-block;
+            width: 400px;
+            border: 2px solid red;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1c5c5;
+        }
+        #blockage1 {
+            display : inline-block ; 
+            box-sizing: border-box;
+            border: 4px dashed #3b403c;
+            background-color: aqua;
+            border-radius: 45px;
+            margin: 42px auto;
+            padding-left: 16px;
+            width: 584px;
+            background-repeat: no-repeat;
+            margin : 64px 1px 1px 112px ;
+
+            float: left ; 
+        }
+        #blockage2
+        {
+            display : inline-block ; 
+            box-sizing: border-box;
+            border: 4px dashed #3b403c;
+            background-color: aqua;
+            border-radius: 45px;
+            margin: 42px auto;
+            padding-left: 16px;
+            width: 584px;
+            background-repeat: no-repeat;
+            margin: 11px 110px -3px -11px;
+            float : right ; 
+        }
+        #hel1 {
+            margin-right: 8px;
+            padding: 8px;
+            font-size: 19px;}
+        #hel2 {
+            margin-right: 8px;
+            padding: 8px;
+            font-size: 19px;}
+    </style>
+
+</head>
+
+<body>
+    <div class="head">
+        <img src="https://www.iiitdmj.ac.in/img/title14.jpg" alt="IIIT DM Logo" style="width:100%" data-retina="true">
+    </div>
+    <header id="header">
+        <nav class="navbar">
+            <ul id="ullist">
+                <li><a href="https://www.iiitdmj.ac.in/"> Home</a></li>
+                <li><a href="https://www.iiitdmj.ac.in/about_us.php"> About Us</a></li>
+                <li><a href="http://faculty.iiitdmj.ac.in/faculty"> Faculty</a></li>
+                <li><a href="https://www.iiitdmj.ac.in/academics/calendar.php"> Academics</a></li>
+                <li><a href="https://www.iiitdmj.ac.in/contact.php"> Contact Us</a> </li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <h2 id="head1">Lost and Found Page</h2>
+    <br>
+    <br><br><br><br>
+
+    <div class="block" id="blockage1">
+        <h2 class="heading">
+            FORM SUBMISSION FOR FOUND ITEMS 
+        </h2>
+        <form action="/backend.php">
+            <div class="block2" id="block2">
+                <label for="names">Enter your Name : </label>
+                <input type="text" placeholder="Enter your ID here " id="names">
+                <br>
+
+                <label for="passwd">Enter your Roll Number  : </label>
+                <input type="text" placeholder="Enter your password here " id="passwd">
+
+            </div>
+            <div class="" id="block3">
+                <h4>Select your Program </h4>
+                <input type="radio" value="class XI" name="class"> B.Tech
+                <input type="radio" value="class XII" name="class"> M.Tech
+                <input type="radio" value="class XII" name="class"> P.hd
+                <h4>Select your Discipline </h4>
+                <input type="radio" value="class XII" name="class"> CSE
+                <input type="radio" value="class XII" name="class"> ECE
+                <input type="radio" value="class XII" name="class"> ME 
+                <input type="radio" value="class XII" name="class"> SM
+            </div>
+            <div class="" id="block4">
+                <h4>Select your Gender  </h4>
+                <input type="radio" value="male" name="gender"> Male
+                <input type="radio" value="female" name="gender"> Female
+                <input type="radio" value="others" name="gender"> Others
+            </div>
+            <div class="" id="block5">
+                <div>
+                    <p><B>
+                        What have you Found ?
+                    </B></p>
+                    Electronic Gadgets:<input type="radio" name="LostItem"><br>
+                    Keys:<input type="radio" name="LostItem"><br>
+                    Fashion Accessories:<input type="radio" name="LostItem"><br>
+                    Staionary:<input type="radio" name="LostItem"><br>
+                    Money:<input type="radio" name="LostItem"><br>
+                    Documents:<input type="radio" name="LostItem"><br>
+                    Others(Please Write in the box): <input type="text" name="myName"><br>
+                </div>
+                <div class="description">
+                    <div>
+                        <p>Write it's description...........</p>
+                        <textarea name="Description" cols="50" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div id="final">
+                <input type="submit" id="hel1">
+                <input type="reset" id ="hel2">
+            </div>
+        </form>
+
+        <h4>! THANK YOU FOR YOUR SUBMISSION :) !</h4><br><br><br>
+
+    </div>
+        <br><br>
+
+
+        <!-- -----------------------------------------------------------------     -->
+
+        <div class="block" id="blockage2">
+            <h2 class="heading">
+                FORM SUBMISSION FOR LOST ITEMS 
+            </h2>
+            <form action="/backend.php">
+                <div class="block2" id="block2">
+                    <label for="names">Enter your Name : </label>
+                    <input type="text" placeholder="Enter your ID here " id="names">
+                    <br>
+    
+                    <label for="passwd">Enter your Roll Number  : </label>
+                    <input type="text" placeholder="Enter your password here " id="passwd">
+    
+                </div>
+                <div class="" id="block3">
+                    <h4>Select your Program </h4>
+                    <input type="radio" value="class XI" name="class"> B.Tech
+                    <input type="radio" value="class XII" name="class"> M.Tech
+                    <input type="radio" value="class XII" name="class"> P.hd
+                    <h4>Select your Discipline </h4>
+                    <input type="radio" value="class XII" name="class"> CSE
+                    <input type="radio" value="class XII" name="class"> ECE
+                    <input type="radio" value="class XII" name="class"> ME 
+                    <input type="radio" value="class XII" name="class"> SM
+                </div>
+                <div class="" id="block4">
+                    <h4>Select your Gender  </h4>
+                    <input type="radio" value="male" name="gender"> Male
+                    <input type="radio" value="female" name="gender"> Female
+                    <input type="radio" value="others" name="gender"> Others
+                </div>
+                <div class="" id="block5">
+                    <div>
+                        <p><B>
+                            What have you Lost ?
+                        </B></p>
+                        Electronic Gadgets:<input type="radio" name="LostItem"><br>
+                        Keys:<input type="radio" name="LostItem"><br>
+                        Fashion Accessories:<input type="radio" name="LostItem"><br>
+                        Staionary:<input type="radio" name="LostItem"><br>
+                        Money:<input type="radio" name="LostItem"><br>
+                        Documents:<input type="radio" name="LostItem"><br>
+                        Others(Please Write in the box): <input type="text" name="myName"><br>
+                    </div>
+                    <div class="description">
+                        <div>
+                            <p>Write it's description...........</p>
+                            <textarea name="Description" cols="50" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div id="final">
+                    <input type="submit" id="hel1">
+                    <input type="reset" id ="hel2">
+                </div>
+            </form>
+    
+            <h4>! THANK YOU FOR YOUR SUBMISSION :) !</h4><br><br><br>
+    
+        </div>
+            <br><br>
+    
+</body>
+
+</html>
